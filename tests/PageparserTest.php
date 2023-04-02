@@ -19,7 +19,7 @@ class PageparserTest extends TestCase
     public function test_input_from_string()
     {
         $pp = new PfPageparser();
-        $pp->load_fom_string('one,two,three')
+        $pp->load_from_string('one,two,three')
             ->split_chunks(',');
         $this->assertEquals(count($pp->get_chunks()), 3);
     }

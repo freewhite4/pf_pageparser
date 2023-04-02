@@ -86,7 +86,7 @@ final class PfPageparser
     /**
      * @return $this
      */
-    public function load_fom_string(string $string): PfPageparser
+    public function load_from_string(string $string): PfPageparser
     {
         $this->initialize();
         $this->content = $string;
